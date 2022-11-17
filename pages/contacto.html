@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../assets/icon/purse.png" type="image/x-icon">
+    <!--Hoja de Estilos Externa CSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Cuatro Soles-contacto</title>
+</head>
+<body id="body-contact">
+
+    <a href="#">
+        <img id="logo" src="../assets/img/Logo.png.png" alt="Logo-Cuatro-Soles" width="250px">
+    </a>
+
+    <header>
+        <nav class="inicio-home">
+        <!--Listas Desordenadas-->
+            <ul>                
+                <li>
+                    <a class="link-nav" href="../index.html">Home</a> <a class="link-nav" href="./recomendados.html">Recomendados
+                    </a>  <a class="link-nav" href="./modelos.html" target="_blank" >Modelos
+                    </a> <a class="link-nav" href="./catalogo.html">Catalogo</a> <a class="link-nav" href="./contacto.html">Contactos</a>
+                </li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <!--Formulario HTML-->
+
+
+
+    <h1>Contactate con nostros!</h1>
+
+    <form action="procesar.php" method="get">
+
+    <div>       
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" placeholder="Escriba su nombre">
+    </div>
+
+    <div>
+    <label for="apellido">Apellido:</label>
+    <input type="text" name="apellido" placeholder="Escriba su nombre">
+    </div>
+
+    <div>
+    <label for="telefono">Teléfono:</label>
+    <input type="text" name="telefono" placeholder="Escriba su teléfono">
+    </div>
+
+    <div>
+    <label for="mail">Correo Electrónico:</label>
+    <input type="email" name="email" placeholder="Escriba su teléfono">
+    </div>
+
+    <div>
+    <label for="pass">Contraseña:</label>
+    <input type="password" name="pass" placeholder="Escriba su contraseña">
+    </div>
+
+    <!--Checkbox-->
+    <h4>Acepta términos y condiciones</h4>
+    <input type="checkbox" name="acepta" value="1">
+
+    <h4>Mensaje: </h4>
+    <textarea name="mensaje" cols="30" rows="10"></textarea>
+    
+    <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar Formulario</button>
+        <button type="button">Botón que no hace nada</button>
+        </div>
+    
+    </form>
+
+    <footer class="footer">
+        <div>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-regular fa-envelope"></i></a>
+            <a href=""><i class="fa-solid fa-location-dot"></i></a>
+        </div>
+        <div>
+            <p>
+                (c) 2022 - 2022 Cuatro Soles. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
