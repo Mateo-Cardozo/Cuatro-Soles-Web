@@ -1,3 +1,93 @@
+@import "fuentes";
+@import "background";
+@import "colores";
+
+/*Variables Globales*/
+$background-principal: gray;
+$background: green;
+$relleno: 20px;
+$ancho: 720px;
+$color: red;
+
+/*Operadores Matemáticos*/
+body{
+    //Condicionales IF
+    //If anidados
+    @if ($color==green) {
+        background-color: green; 
+        padding: 15px; 
+        margin: 10px; 
+    } 
+    
+    @else if ($color==red) {
+        background-color: red;
+    }
+
+    @else {
+        background-color: pink;
+    }
+    //operaciones matemáticas
+    padding: $relleno;
+    width: ($ancho/2) * 3;
+}
+
+/*Bucle FOR*/
+
+@for $i from 1 to 6{
+    h#{$i}{//interporlacion
+        font-size: $i * 10px;
+    }
+}
+
+/*Bucle Each*/ 
+$lista1: red, green, yellow, blue, pink, black;
+
+@each $color in $lista1 {
+    .#{$color}{
+        background-color: $color
+    } 
+}
+
+/*Maps*/
+$estilos: (
+    color: green,
+    centro: center,
+    tFuente: 35px,
+    1rem: 1rem
+);
+
+div {
+    background-color: map-get($map: $estilos, $key: color);
+    text-align: map-get($map: $estilos, $key: centro);
+    padding: map-get($map: $estilos, $key: tFuente);
+    font-size: map-get($map: $estilos, $key: 1rem);
+}
+
+/*Extend*/
+.card {
+    background: #fff;
+    border-radius: 5px;
+    padding: 16px;
+    box-shadow: 1px 1px 12px 0px;
+}
+
+.usercard {
+    @extend .card;
+}
+
+/*Mixins*/
+
+@mixin crearBordes($colorBorde, $size,$shadow) {
+    border: $size solid $colorBorde;
+    border-radius: $size;
+    box-shadow: 0px 0px $size $shadow;
+}
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
